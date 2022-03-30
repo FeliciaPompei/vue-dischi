@@ -1,7 +1,7 @@
 <template>
-  <div id="record-wrapper" class="container w-75 p-3">
+  <div id="record-wrapper" class="container w-75 p-5">
     <div class="row">
-      <div class="col-12 d-flex flex-wrap">
+      <div class="col-12 d-flex flex-wrap justify-content-center">
         <RecordCard v-for="(element, index) in recordList" :key="index" :element="element"></RecordCard>
       </div>
     </div>

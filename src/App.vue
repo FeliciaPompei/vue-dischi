@@ -35,4 +35,7 @@ export default {
 
 <style lang="scss">
 @import'./assets/styles/style.scss';
+body{
+  overflow:hidden;
+}
 </style>
