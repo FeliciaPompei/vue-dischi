@@ -18,6 +18,5 @@ export default {
 @import'../assets/styles/style.scss';
 main {
   background-color: $mainBgColor;
-  height: 92.1vh;
 }
 </style>

@@ -1,8 +1,9 @@
 <template>
-  <div id="record-wrapper" class="container w-75 p-5">
+  <div id="record-wrapper" class="container w-75 p-3">
     <div class="row">
-          <RecordCard v-for="(element, index) in recordList" :key="index"
-          :recordCard="element"/>
+      <div class="col-12 d-flex flex-wrap">
+        <RecordCard v-for="(element, index) in recordList" :key="index" :element="element"></RecordCard>
+      </div>
     </div>
   </div>
 </template>
@@ -28,7 +29,7 @@ export default {
     getRecordList(){
       axios.get('https://flynn.boolean.careers/exercises/api/array/music')
       .then((result) => {
-        console.table(result.data.response)
+        console.log(result.data.response)
         this.recordList = result.data.response;
         console.log(this.recordList)
       })
