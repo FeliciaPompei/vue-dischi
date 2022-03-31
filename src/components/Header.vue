@@ -19,8 +19,6 @@ export default {
 
 header {
   background-color: $headerBgColor;
-  img{
-    filter:green;
-  }
+  height: 50px;
 }
 </style>

@@ -20,7 +20,7 @@ export default {
 <style scoped lang="scss">
 @import'../assets/styles/style.scss';
 .my-card{
-  background-color: #354351;
+  background-color: $cardBgColor;
   font-size: 0.7rem;
   width:calc(80% / 5);
 }
